@@ -1,7 +1,6 @@
-import By "selenium-webdriver"
-import {BasePage} from (./basePage)
-
-export class tgif extends BasePage{}
+import {By} from "selenium-webdriver"
+import {BasePage} from './basePage'
+export class tgif extends BasePage {
 
 viewMenu: By = By.className("et_pb_menu_page_id-86202 menu-item menu-item-type-custom menu-item-object-custom menu-item-86202");
 viewMenuResults: By = By.xpath('(//h3[@class="_headingH2"])[1]');
@@ -15,6 +14,7 @@ orderOnline: By = By.className("et_pb_menu_page_id-1348 menu-item menu-item-type
 nearbyField: By = By.name("vendor-search-nearby");
 nearbyBTN: By = By.className("_button_7o22y9 _softDisabled_7o22y9 _size-500_7o22y9 _submit_1dx6vg _row_1dx6vg");
 
-const() {
+constructor() {
     super({url: "https://tgif.com"})
+}
 }
