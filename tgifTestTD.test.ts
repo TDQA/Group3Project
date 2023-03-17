@@ -1,4 +1,4 @@
-import { Tgif } from "./tgifPageObjects";
+import { Tgif } from "./tgifPageObjectsTD";
 const fs = require('fs')
 const tgif = new Tgif()
 
