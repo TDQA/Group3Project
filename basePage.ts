@@ -46,4 +46,6 @@ export class BasePage {
     async getAttribute(elementBy: By, attribute: string) {
         return (await this.getElement(elementBy)).getAttribute(attribute)
     }
+
+    
 }
