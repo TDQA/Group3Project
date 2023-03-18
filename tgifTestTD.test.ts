@@ -100,7 +100,7 @@ describe("Should test the functionality of TGIFridays website", () => {
             else console.log('Save Successful')
         })
     })
-    test("Should be able to navigate to the sign up page for Rewards Program", async () => {
+    test("Should be able to sign up for Rewards Program", async () => {
         await tgif.click(tgif.viewRewards)
         await tgif.click(tgif.signUpBtn)
         await tgif.click(tgif.emailField)
